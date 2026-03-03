@@ -23,8 +23,8 @@ func main() {
 	}
 
 	for _, web := range websitelist {
-		go getStatusCode(web)
 		waitGrpup.Add(1)
+		go getStatusCode(web)
 	}
 	waitGrpup.Wait()
 }
