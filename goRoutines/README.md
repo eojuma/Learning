@@ -1,9 +1,3 @@
-Welcome to the world of Go concurrency. Go's mascot is a gopher, and the language is designed to make that gopher do a thousand things at once without breaking a sweat.
-
-Here is your progressive guide to mastering Go's concurrency primitives, moving from basic execution to complex synchronization.
-
----
-
 ## 1. Concurrency vs. Parallelism
 
 Before writing code, you need to understand the "Why."
@@ -118,5 +112,3 @@ Go has a built-in tool to find concurrency bugs. Always run your tests with:
 `go run -race main.go`
 
 ---
-
-Would you like me to create a practical code example that combines all of these into a real-world scenario, like a concurrent image downloader or a web scraper?
