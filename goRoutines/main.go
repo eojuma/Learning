@@ -49,3 +49,5 @@ func getStatusCode(endpoint string) {
 	mut.Unlock()
 	fmt.Println(res.StatusCode, endpoint)
 }
+
+
