@@ -6,7 +6,11 @@ import (
 	"sync"
 )
 
-var waitGrpup sync.WaitGroup
+var (
+	waitGrpup sync.WaitGroup
+	mut       sync.Mutex
+)
+var signals []string
 
 func main() {
 	// for i := 0; i < 4; i++ {
@@ -27,6 +31,7 @@ func main() {
 		go getStatusCode(web)
 	}
 	waitGrpup.Wait()
+	fmt.Println(signals)
 }
 
 // func greeter(s string) {
@@ -34,11 +39,13 @@ func main() {
 // }
 
 func getStatusCode(endpoint string) {
-
 	defer waitGrpup.Done()
 	res, err := http.Get(endpoint)
 	if err != nil {
 		fmt.Println("Oops error", err)
 	}
+	mut.Lock()
+	signals = append(signals, endpoint)
+	mut.Unlock()
 	fmt.Println(res.StatusCode, endpoint)
 }
