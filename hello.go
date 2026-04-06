@@ -5,11 +5,14 @@ import (
 
 
 )
-
+const englishPrefix = "Hello, "
 func main() {
-fmt.Println(Hello(" "+"Evans"))
+fmt.Println(Hello(""))
 }
 
 func Hello(name string)string{
-	return "Hello" +  name
+	if name==""{
+		name="World!"
+	}
+	return englishPrefix +  name
 }
