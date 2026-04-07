@@ -1,7 +1,8 @@
 package main
 
-import "testing"
-
+import( "testing"
+"reflect"
+)
 func TestHello(t *testing.T) {
 	t.Run("saying hello to people", func(t *testing.T) {
 
@@ -51,3 +52,37 @@ func TestRepeat(t *testing.T) {
 
 	assertMessage(t, got, want)
 }
+
+func TestSum(t *testing.T) {
+	t.Run("testing the sum of five numbers", func(t *testing.T) {
+		a := [5]int{1, 2, 3, 4, 5}
+		got := Arrays(a)
+		want := 15
+
+		assertSum(t, got, want)
+	})
+}
+
+func TestSlices(t *testing.T){
+	a:=[]int{7,5,8}
+	b:=[]int{1,2,3}
+	got:=Slices(a,b)
+	want:=[]int{20,6}
+// go does not allow comparison of two slices 
+// or arrays of different lengths so we use 
+// reflect.DeepEqual from the reflect package to do the comparison
+//it could also be used structs,maps
+	if !reflect.DeepEqual(got,want) {
+		t.Errorf("got %v,want %v",got,want)
+	}
+}
+
+
+
+
+func assertSum(t testing.TB, got, want int) {
+	if got != want {
+		t.Errorf("got %d , want %d", got, want)
+	}
+}
+
