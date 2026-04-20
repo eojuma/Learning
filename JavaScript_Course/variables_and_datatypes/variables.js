@@ -11,13 +11,13 @@ console.log(names,courseName,isLoggedIn,loggedIn,paymentMode);
 // various ways to add a set of aray to another array
 
 var users =['john','james']
-var newUser ='felix'
+var newUser =['felix','joel']
 
 //spread operator
 var allUsers=[...users,...newUser]
 console.log(allUsers)
 // push
-var allUsers=users.push(newUser)
+var allUsers=users.push(...newUser)
 console.log(users)
 
 
