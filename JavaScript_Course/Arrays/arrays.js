@@ -23,5 +23,5 @@ console.log(allNames)
 
 //using the shift function
 
-allNames.shift();  //equally removes the last name in the array
+allNames.shift();  //removes the first element in the array
 console.log(allNames);
