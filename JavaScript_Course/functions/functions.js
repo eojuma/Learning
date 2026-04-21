@@ -36,3 +36,9 @@ function getUserRole(name,role){
 }
 
 console.log(getUserRole("Juma","admin"))
+
+//notes
+// function declarations are scanned and made available
+// variable declarations are scanned and made undefined
+
+// when you declare a function as a variable then the function must be called after the variable
