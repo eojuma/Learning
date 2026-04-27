@@ -29,7 +29,7 @@ myNumbers.forEach((s)=>(console.log(s)));
 
 console.log()
 
-// 5.for of (arrats)
+// 5.for of (arrays)
 for(const n of myNumbers){
 console.log(n);
 }
