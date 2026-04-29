@@ -1,15 +1,16 @@
-var counter = document.getElementById("counter");
-var followers = document.getElementById("followers");
+var counted = document.getElementById("counter");
+var follower = document.getElementById("followers");
 
 let count = 1;
+let followers = "Followers on Instagram"
 
-setInterval(() => {
-  if (count < 1000) {
+setInterval(()=>{
+  if (count<1000){
     count++;
-    counter.innerText = count;
+    counted.innerText = count;
   }
-},5);
+},5)
 
 setTimeout(()=>{
-followers.innerText="Followers  on Instagram";
-},5000);
+  follower.innerText = followers;
+},5000)
