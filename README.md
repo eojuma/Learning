@@ -20,8 +20,7 @@ It is designed to help me practice core concepts and improve through daily, incr
 
 * Go
 * Git
-* (Add others later, e.g. HTML, CSS)
-
+* JavaScript
 ---
 
 ## 📂 Project Structure
