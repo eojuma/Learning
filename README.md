@@ -76,14 +76,6 @@ project-name/
 
 ---
 
-## 📅 Progress Log (Optional but Powerful)
-
-* Day 1: Initial setup and basic functionality
-* Day 2: Added input handling
-* Day 3: Improved formatting logic
-
----
-
 ## 🤝 Acknowledgements
 
 This project is built as part of a self-guided learning process using official documentation and hands-on practice.
