@@ -20,8 +20,7 @@ It is designed to help me practice core concepts and improve through daily, incr
 
 * Go
 * Git
-* (Add others later, e.g. HTML, CSS)
-
+* JavaScript
 ---
 
 ## 📂 Project Structure
@@ -73,14 +72,6 @@ project-name/
 * [ ] Improve error handling
 * [ ] Refactor code structure
 * [ ] Add tests
-
----
-
-## 📅 Progress Log (Optional but Powerful)
-
-* Day 1: Initial setup and basic functionality
-* Day 2: Added input handling
-* Day 3: Improved formatting logic
 
 ---
 
