@@ -11,6 +11,7 @@ var (
 	ErrUsernameTaken    = errors.New("username already exist")
 	ErrPhoneNumberTaken = errors.New("Phone number already exist")
 	ErrIDNumberTaken    = errors.New("ID Number already exist")
+	ErrUserNotFound =errors.New("user does not exist")
 )
 
 type User struct {
